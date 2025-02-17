@@ -80,4 +80,5 @@ func testblob() {
 func main() {
 	testrds()
 	testblob()
+	select {}
 }
