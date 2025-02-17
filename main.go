@@ -5,6 +5,7 @@ import (
 	"database/sql"
 	"fmt"
 	"log"
+	"time"
 
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/minio/minio-go/v7"
@@ -80,5 +81,5 @@ func testblob() {
 func main() {
 	testrds()
 	testblob()
-	select {}
+	<-time.After(1 * time.Hour)
 }
