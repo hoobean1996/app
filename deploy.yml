@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: myapp
-        image: app:v0.0.2    # 改为你的实际镜像名和标签
+        image: app:latest    # 改为你的实际镜像名和标签
         imagePullPolicy: Never   # 添加这个确保使用本地镜像
         ports:
         - containerPort: 8080
